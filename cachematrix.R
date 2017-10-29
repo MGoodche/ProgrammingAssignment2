@@ -40,4 +40,16 @@ cacheSolve <- function(x, ...) {
         invMatrix
 }
 
-## TESTING THE FUNCTION
+## TESTING THE FUNCTIONS
+> source("cachematrix.R")
+> testmatrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+> testmatrix$getInverse()
+NULL
+> cacheSolve(testmatrix)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> testmatrix$getInverse()
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
