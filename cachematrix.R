@@ -39,3 +39,5 @@ cacheSolve <- function(x, ...) {
         x$setInverse(invMatrix)
         invMatrix
 }
+
+## TESTING THE FUNCTION
